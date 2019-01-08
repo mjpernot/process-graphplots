@@ -1,0 +1,84 @@
+# Cocoms Process Control
+#   Cocoms in the list run against the specified code section.
+# Commands to have graphplot files validated.
+validate_cmds = ["command_dir", "command_dir", ...]
+# Commands to have the files processed for imagery & web pages.
+process_cmds = ["command_dir", "command_dir", ...]
+
+# Directory paths
+# Location for the error log.
+error_dir = "/www/intelink/cronjob-errors/graphplots"
+# Temporary directory for processing temp files for program.
+temp_dir = "/www/intelink/gp_temp"
+# Directory path to the Region country list files.
+list_dir = "/www/gpsupport/Scripts/GP_UPDATE"
+# Base directory containing the command structure for web pages.
+graphbase_dir = "/www/intelink/docroot/docs/doi"
+# Directory containing the raw input files.
+gp_dir = "/www/gpdropbox"
+# Base directory for post-processed files.
+archive_dir = "/www/gpsupport/postprocessarchive"
+# Directory for JSON files.
+json_dir = "/www/JSON"
+
+# Directory names (not full directory paths)
+# Directory folder containing the BE number files.
+be_folder = "graphplots"
+# Directory folder containing the processed files.
+processed_folder = "GP_processed"
+# Directory folder containing the rejected files.
+rejected_folder = "GP_rejected"
+# Directory folder containing the .xml file for graph plot files.
+gp_meta_folder = "GP_metacards"
+# Directory folder containing files that have not been web processed.
+web_nonproc_folder = "GP_non_processed"
+
+# File names
+# File name of the Target Deck.
+tgtdeck_file = "tgtDeck"
+# File name for mailed files not found in the Target Deck.
+mail_notdeck_file = "gpnotindeck-mailed"
+# File name for rejected graph plot file names.
+gp_reject_file = "rejected_graphplots"
+# Name of lock file.
+lock_file = "process_graphplots.lock"
+
+# Documentum processing directories.
+#   Can leave Null if Documentum processing is not required.
+# Directory path where XML file is save to.
+metacard_dir = "/data/cms/ipl_images"
+# Directory path where graph plot file is save to.
+image_dir = "/data/cms/ipl_images"
+
+# Email addresses
+# NOT USED
+emailfrom = "Mark.J.Pernot@coe.ic.gov"
+# Email address(es) for invalid/reject GP messages.
+emailtowarn = "Mark.J.Pernot@coe.ic.gov"
+# Email address(es) for target not in deck messages.
+emailtotgt = "Mark.J.Pernot@coe.ic.gov"
+
+# User and Group IDs
+# Imagery User ID
+img_id = 1322372319
+##img_id = 18001
+# Imagery Group ID
+img_grp = 505
+##img_grp = 1007
+# Web User ID
+web_id = 1322372319
+##web_id = 80
+# Web Group ID
+web_grp = 505
+##web_grp = 606
+
+# File and Directory Perms (set as octal)
+# File Perm
+f_perm = 0664
+# Directory Perm
+d_perm = 0775
+##d_perm = 0575
+
+# File Extension Settings
+#   List of extensions that will be processed.
+file_ext = ["jpg", "JPG"]
