@@ -119,7 +119,7 @@ import json
 # Local
 import lib.arg_parser as arg_parser
 import lib.gen_libs as gen_libs
-import lib.system as system
+import system
 import lib.gen_class as gen_class
 import version
 
